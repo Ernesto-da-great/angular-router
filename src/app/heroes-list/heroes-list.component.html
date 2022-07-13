@@ -1,0 +1,28 @@
+<div class="section">
+   <div>
+      <h3>
+         HEROES
+      </h3>
+      
+      <p>
+         Get your heroes here
+      </p>
+   
+      <ul>
+         <li *ngFor="let hero of heroes" (click)="onSelect(hero)">
+            {{ hero.name }}
+         </li>
+      </ul>
+   </div>
+
+  <section *ngIf="selectedHero">
+      <h2>
+         {{selectedHero.name}} details.
+      </h2>
+      <p>
+         <b>{{ selectedHero.name }}</b> is <b>{{ selectedHero.age }}</b> years old. <br>
+         {{ selectedHero.description }}
+      </p>
+   </section>
+
+</div>

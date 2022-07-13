@@ -1,0 +1,16 @@
+li {
+   background-color: #528ecc;
+   margin: 10px;
+   width: 20%;
+   padding: 10px;
+   border-radius: 5px;
+   transition: 0.3s;
+}
+
+li:hover {
+   transform: scale(1.1, 1.1);
+   background-color: #0e0561;
+   color: white;
+   box-shadow: 0px 0px 10px -1px black;
+   list-style: circle;
+}

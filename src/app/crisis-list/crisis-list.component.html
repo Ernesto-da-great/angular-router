@@ -1,0 +1,28 @@
+<div class="section">
+   <div>
+      <h3>
+         CRISIS CENTER
+      </h3>
+      
+      <p>
+         Get your crisis here
+      </p>
+   
+      <ul>
+         <li *ngFor="let crisis of crisis" (click)="onSelect(crisis)">
+            {{ crisis.name}}
+         </li>
+      </ul>
+   </div>
+
+   <section *ngIf="selectedCrisis">
+      <h2>
+         {{selectedCrisis.name}} details.
+      </h2>
+      <p>
+         {{ selectedCrisis.name }} is a level {{ selectedCrisis.level }} crisis.<br>
+         {{ selectedCrisis.description }}
+      </p>
+   </section>
+   
+</div>
